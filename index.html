@@ -3,145 +3,247 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
   <title>Document</title>
   <style>
-    body {
-      background-color: #F3F0F0;
-      margin: 40px 120px;
-    }
-    hr {
-      border: 1px solid rgb(218, 207, 207);
-      margin: 30px 0;
-    }
-    .first-section {
-      color: grey;
-    }
-    .top-header {
-      font-family: Roboto;
-      letter-spacing: 1px;
-      font-weight: 800;
-      font-size: 1.6rem;
-      color: #432D58;
-      margin-top: 1rem;
-    }
-    .description {
-      margin-top: 1rem;
-      margin-bottom: 2rem;
-    }
-    .weeks {
-      font-family: Roboto;
-      font-size: 0.9rem;
-      letter-spacing: 0.8px;
-      font-weight: 800;
-      margin: -2px;
-    }
-    blockquote {
-      border-left: 2px solid #432D58;
-      padding-left: 10px;
-      margin-left: 0px;
-      width: 500px;
-      font-family: Arial;
-      font-size: 0.8rem;
-      color: #696969;
-      letter-spacing: 0.8px;
-      line-height: 18px;
-    }
-    .p {
-      display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-    }
-    .price-description {
-      font-family: Roboto;
-      font-size: 1rem;
-      font-weight: 700;
-      color: #512679;
-      letter-spacing: 0.9px;
-      margin-top: 30px;
-      margin-bottom: 0;
-      padding: 0;
-    }
-    .schedule {
-      font-size: 0.8rem;
-      color: #696969;
-      padding: 0;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    button {
-      padding: 1rem 2rem;
-      background-color: #432D58;
-      font-family: cabinetRegular;
-      font-size: 1rem;
-      margin-right: 10px;
-      color: #f8f8f8;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      border-radius: 8px;
-      box-sizing: border-box;
+      body {
+        background-color: #F3F0F0;
+        margin: 40px 120px;
+        margin-bottom: 80px;
+        }
+      .top-page-bar {
+        border: 2px solid rgb(197, 188, 188);
+        margin-top: 40px;
+        margin-bottom: 40px;
       }
-    .second-header {
-      font-family: Roboto;
-      letter-spacing: 1px;
-      margin-top: 50px;
+      .top-header {
+        font-family: cabinetRegular;
+        font-weight: 800;
+        font-size: 16px;
+        color: #432D58;
+        letter-spacing: 0.5px;
+        margin-top: 0;
       }
-
-    .why-join {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      column-gap: 1rem;
-      row-gap: 1rem;
-      align-items: start;
-      flex-wrap: wrap;
+      .weeks {
+        font-family: cabinetRegular;
+        font-weight: 800;
+        font-size: 10px;
+        color: #432D58;
+        letter-spacing: 1px;
+        margin-top: 0;
+        margin-left: -5px;
       }
-
-    .why-join div {
-      flex: 3;
-      width: 30%;
-      height: auto;
-      border: 2px Solid rgb(217, 208, 208);
-      padding: 20px 24px;
-      border-radius: 10px;
-      background-color: white;
+      .description-bar {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
       }
-    .why-join p {
-      font-family: cabinetRegular;
-      font-size: 0.9rem;
-      color: #696969;
-      letter-spacing: 0.8px;
-      line-height: 20px;
+      .description p {
+        font-size: 1rem;
+        font-family: cabinetRegular;
+        color: #696969;
+        margin-top: 0;
       }
-    
+      .blockquote {
+        border-left: 2px solid #432D58;
+        padding-left: 30px;
+        width: 1000px;
+        font-size: 14px;
+        font-family: cabinetRegular;
+        color: #696969;
+        letter-spacing: 0.5px;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 1rem 2rem;
+        background-color: #432D58;
+        font-family: cabinetRegular;
+        font-size: 1rem;
+        color: #f8f8f8;
+        border: none;
+        outline: none;
+        column-gap: 0.5rem;
+        cursor: pointer;
+        border-radius: 8px;
+        display: inline;
+        margin-right: 20px;
+      }
+      .buttons-div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        column-gap: 1rem;
+        margin-top: 1.17rem;
+        margin-bottom: 20px;
+      }
+      .price h1 {
+        font-family: cabinetRegular;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #512679;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+      }
+      .price p {
+        font-family: cabinetRegular;
+        font-size: 8px;
+        font-weight: 700;
+        color: #696969;
+        letter-spacing: 0.5px;
+        margin-top: 0;
+      }
+      /* this is where css for why elements begins */
+      .why-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1rem;
+        margin-top: 2rem;
+      }
+      .why-join-title {
+        font-family: cabinetRegular;
+        font-weight: 800;
+        font-size: 8px;
+        color: #696969;
+        letter-spacing: 0.5px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .why-join {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: -5rem;
+        row-gap: 1rem;
+        align-items: start;
+        flex-wrap: wrap;
+        margin-top: 0;
+      }
+      .column {
+        width: 25%;
+        height: auto;
+        background-color: white;
+        border: 2px solid #d7d7d7;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        padding: 1rem;
+        border-radius: 8px;
+      }
+      .column h1 {
+        font-family: cabinetRegular;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #2c2929;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+      }
+      .column p {
+        font-family: cabinetRegular;
+        width: auto;
+        font-size: 8px;
+        font-weight: 700;
+        color: #696969;
+        letter-spacing: 0.5px;
+        margin-top: 0;
+      }
+      /* this is css for curriculum section */
+      .curriculum-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        margin-top: 2rem;
+      }
+      .curriculum-header {
+        font-family: cabinetRegular;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #696969;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+      }
+      .topic-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        align-items: start;
+        margin-top: 0;
+      }
+      .topic-card {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border: 2px solid #d7d7d7;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+        padding: 16px;
+        border-radius: 8px;
+      }
+      .topic-card h1 {
+        font-family: cabinetRegular;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #2c2929;
+        letter-spacing: 2px;
+        margin: 0;
+        padding: 0;
+      }
+      .topic-card p {
+        padding: 0;
+        margin: 0;
+      }
+      .time-schedule {
+        font-family: cabinetRegular;
+        width: auto;
+        font-size: 8px;
+        font-weight: 700;
+        color: #696969;
+        letter-spacing: 0.5px;
+        margin: 0;
+        padding: 0;
+      }
   </style>
 </head>
 <body>
-  <img src="images/Logo (10).svg" alt="">
-<hr>
-      <div class="first-section">
-        <h1 class="top-header">Javascript Bootcamp <span class="weeks">(14 Weeks)</span></h1>
-
-        <p class="description">
-          Join our Javascript Bootcamp to learn how you can build interactive web pages using HTML, CSS And Javascript.
-        </p>
-
-        <p class="blockquote">
-          <blockquote>
-          NOTE : For Students Who Are Unable To Join The Live Sessions Due To Conflicting Schedules, The Recording Of Any Live Class You Miss Will Be Sent To You 2 Hours After The Class Ends
-        </blockquote>
-        </p>
+    <img src="images/Logo (10).svg" alt="">
+    <div class="top-page-bar"></div>
+      <!-- This is the beginning of info on the page -->
+      <div class="description-bar">
+        <div class="top-header">
+          <h1>Javascript Bootcamp <span class="weeks">(14 Weeks)</span></h1>
+        </div>
+        <div class="description">
+          <p>
+            Join our Javascript Bootcamp to learn how you can build interactive web pages using HTML, CSS And Javascript.
+          </p>
+        </div>
+        <div class="blockquote">
+          <p>
+            NOTE : For Students Who Are Unable To Join The Live Sessions Due To Conflicting Schedules, The Recording Of Any Live Class You Miss Will Be Sent To You 2 Hours After The Class Ends
+          </p>
+        </div>
       </div>
-
-      <div class="price]">
-          <h2 class="price-description">Price: $50 Or NGN 40,000</h2>
-          <p class="schedule">Starting Date: November 6, 2023</p>
-          <div>
+      <!-- This is the price section -->
+      <div class="price">
+          <h1>Price: $50 Or NGN 40,000</h1>
+          <p>Starting Date: November 6, 2023</p>
+          <div class="buttons-div">
             <button>
               Register (USD)
             </button>
@@ -151,105 +253,124 @@
           </div>
       </div>
 
-      <h2 class="second-header">Why You Should Join This Bootcamp</h2>
-      <div class="why-join">
-        <div class="column">
-          <h4>Live Classes</h4>
-          <p>Our classes are Live and hands-on. Join our bootcamp and learn by interacting and asking questions in your own words.</p>
+      <!-- This is where the why section begins -->
+      <div class="why-container">
+        <div class="why-join-title">
+          <h1>Why You Should Join This Bootcamp</h1>
         </div>
-        <div class="column">
-          <h4>Live Projects</h4>
-          <p>Gain hands-on experience, build practical, real world applications. Boost your portfolio with live projects and stand a better chance with potential employers.</p>
-        </div>
-        <div class="column">
-          <h4>Career Mentorship</h4>
-          <p>Engage with seasoned industry professionals and acquire the necessary guidance, support, and advice you need to excel in your career</p>
-        </div>
-        <div class="column">
-          <h4>AI as a Tool</h4>
-          <p>Join our bootcamp to learn how to use Artificial Intelligent tools in idea brainstorming, designing and engineering.</p>
-        </div>
-        <div class="column">
-          <h4>Community</h4>
-          <p>Join our community to connect, collaborate, and grow together with like-minded individuals who share a passion for technology.</p>
-        </div>
-        <div class="column">
-          <h4>Earn A Certificate</h4>
-          <p>At the end of the bootcamp, earn a certificate to validate your accomplishments and skills gained during the program.</p>
+        <div class="why-join">
+          <div class="column">
+            <h1>Live Classes</h1>
+            <p>Our classes are Live and hands-on. Join our bootcamp and learn by interacting and asking questions in your own words.</p>
+          </div>
+          <div class="column">
+            <h1>Live Projects</h1>
+            <p>Gain hands-on experience, build practical, real world applications. Boost your portfolio with live projects and stand a better chance with potential employers.</p>
+          </div>
+          <div class="column">
+            <h1>Career Mentorship</h1>
+            <p>Engage with seasoned industry professionals and acquire the necessary guidance, support, and advice you need to excel in your career</p>
+          </div>
+          <div class="column">
+            <h1>AI as a Tool</h1>
+            <p>Join our bootcamp to learn how to use Artificial Intelligent tools in idea brainstorming, designing and engineering.</p>
+          </div>
+          <div class="column">
+            <h1>Community</h1>
+            <p>Join our community to connect, collaborate, and grow together with like-minded individuals who share a passion for technology.</p>
+          </div>
+          <div class="column">
+            <h1>Earn A Certificate</h1>
+            <p>At the end of the bootcamp, earn a certificate to validate your accomplishments and skills gained during the program.</p>
+          </div>
         </div>
       </div>
 
-      <div class="fourth-section">
-        <div>
-          <h3>Week 1</h3>
-          <p>HTML & CSS Crash Course</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
+      <!-- this is where curriculum begins -->
+      <div class="curriculum-container">
+        <div class="curriculum-header">
+          <h1>curriculum</h1>
         </div>
-        <div>
-          <h3>Week 2</h3>
-          <p>Data Types, Variables & Basic Operations In Javascript</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
+          <div class="topic-card-container">
+          <div class="topic-card">
+            <h1 >Week 1</h1>
+            <p>HTML & CSS Crash Course</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Week 2</h1>
+            <p>Data Types, Variables & Basic Operations In Javascript</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Week 3</h1>
+            <p>Object Literals & Conditionals</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Week 4</h1>
+            <p>HTML & CSS Crash Course</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Week 5</h1>
+            <p>HTML & CSS Crash Course</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Week 6</h1>
+            <p>HTML & CSS Crash Course</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Mid Bootcamp Break</h1>
+            <p>HTML & CSS Crash Course</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Week 7</h1>
+            <p>HTML & CSS Crash Course</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Week 8</h1>
+            <p>HTML & CSS Crash Course</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Week 9</h1>
+            <p>HTML & CSS Crash Course</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Week 10</h1>
+            <p>HTML & CSS Crash Course</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Week 1</h1>
+            <p>HTML & CSS Crash Course</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Week 11</h1>
+            <p>HTML & CSS Crash Course</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
+          <div class="topic-card">
+            <h1>Week 12</h1>
+            <p>HTML & CSS Crash Course</p>
+            <p class="time-schedule">MON - FRI (7PM - 9PM WAT)</p>
+          </div>
         </div>
-        <div>
-          <h3>Week 3</h3>
-          <p>Object Literals & Conditionals</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
-        </div>
-        <div>
-          <h3>Week 4</h3>
-          <p>HTML & CSS Crash Course</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
-        </div>
-        <div>
-          <h3>Week 5</h3>
-          <p>HTML & CSS Crash Course</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
-        </div>
-        <div>
-          <h3>Week 6</h3>
-          <p>HTML & CSS Crash Course</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
-        </div>
-        <div>
-          <h3>Mid Bootcamp Break</h3>
-          <p>HTML & CSS Crash Course</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
-        </div>
-        <div>
-          <h3>Week 7</h3>
-          <p>HTML & CSS Crash Course</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
-        </div>
-        <div>
-          <h3>Week 8</h3>
-          <p>HTML & CSS Crash Course</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
-        </div>
-        <div>
-          <h3>Week 9</h3>
-          <p>HTML & CSS Crash Course</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
-        </div>
-        <div>
-          <h3>Week 10</h3>
-          <p>HTML & CSS Crash Course</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
-        </div>
-        <div>
-          <h3>Week 1</h3>
-          <p>HTML & CSS Crash Course</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
-        </div>
-        <div>
-          <h3>Week 11</h3>
-          <p>HTML & CSS Crash Course</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
-        </div>
-        <div>
-          <h3>Week 12</h3>
-          <p>HTML & CSS Crash Course</p>
-          <p>MON - FRI (7PM - 9PM WAT)</p>
-        </div>
+      </div>
+      <div class="buttons-div">
+        <button>
+          Register (USD)
+        </button>
+        <button>
+          Register (Naira)
+        </button>
       </div>
 </body>
 </html>
