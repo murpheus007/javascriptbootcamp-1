@@ -10,13 +10,19 @@
   <style>
       body {
         background-color: #F3F0F0;
-        margin: 40px 120px;
+        margin: 40px 80px;
         margin-bottom: 80px;
+        }
+        p {
+          margin: 0;
+        }
+        h1 {
+          margin: 0;
         }
       .top-page-bar {
         border: 2px solid rgb(197, 188, 188);
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 36px;
+        margin-bottom: 10px;
       }
       .top-header {
         font-family: cabinetRegular;
@@ -24,7 +30,7 @@
         font-size: 16px;
         color: #432D58;
         letter-spacing: 0.5px;
-        margin-top: 0;
+        margin-bottom: 8px;
       }
       .weeks {
         font-family: cabinetRegular;
@@ -36,25 +42,26 @@
         margin-left: -5px;
       }
       .description-bar {
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+        margin-top: 16px;
+        margin-bottom: 16px;
       }
       .description p {
         font-size: 1rem;
         font-family: cabinetRegular;
         color: #696969;
         margin-top: 0;
+        margin-bottom: 8px;
       }
       .blockquote {
         border-left: 2px solid #432D58;
-        padding-left: 30px;
+        padding-left: 24px;
         width: auto;
         font-size: 14px;
         font-family: cabinetRegular;
         color: #696969;
         letter-spacing: 0.5px;
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
       }
       button {
         padding: 1rem 2rem;
@@ -83,7 +90,7 @@
       }
       .price h1 {
         font-family: cabinetRegular;
-        font-size: 0.8rem;
+        font-size: 16px;
         font-weight: 700;
         color: #512679;
         letter-spacing: 2px;
@@ -91,7 +98,7 @@
       }
       .price p {
         font-family: cabinetRegular;
-        font-size: 8px;
+        font-size: 12px;
         font-weight: 700;
         color: #696969;
         letter-spacing: 0.5px;
@@ -100,13 +107,9 @@
       /* this is where css for why elements begins */
       .why-container {
         width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        row-gap: 1rem;
-        margin-top: 2rem;
+        display: block;
+        column-gap: 10px;
+        margin-top: 30px;
       }
       .why-join-title {
         font-family: cabinetRegular;
@@ -115,28 +118,23 @@
         color: #696969;
         letter-spacing: 0.5px;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
       .why-join {
+        display: grid;
         width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        column-gap: -5rem;
-        row-gap: 1rem;
-        align-items: start;
-        flex-wrap: wrap;
-        margin-top: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap:24px;
+        row-gap: 16px;
       }
       .column {
-        width: 25%;
+        width: auto;
         height: auto;
         background-color: white;
-        border: 2px solid #d7d7d7;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         display: flex;
         flex-direction: column;
-        row-gap: 0.5rem;
+        column-gap: 1rem;
         padding: 1rem;
         border-radius: 8px;
       }
@@ -146,7 +144,7 @@
         font-weight: 700;
         color: #2c2929;
         letter-spacing: 2px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
       .column p {
         font-family: cabinetRegular;
@@ -161,17 +159,18 @@
       .curriculum-container {
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        row-gap: 8px;
-        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        margin-top: 30px;
       }
       .curriculum-header {
         font-family: cabinetRegular;
-        font-size: 0.8rem;
-        font-weight: 700;
+        font-weight: 800;
+        font-size: 8px;
         color: #696969;
-        letter-spacing: 2px;
+        letter-spacing: 0.5px;
+        margin-top: 0;
         margin-bottom: 0;
       }
       .topic-container {
@@ -179,8 +178,7 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        column-gap: 1rem;
-        row-gap: 1rem;
+        column-gap: 3rem;
         align-items: start;
         margin-top: 0;
       }
@@ -188,12 +186,12 @@
         width: 100%;
         height: auto;
         background-color: white;
-        border: 2px solid #d7d7d7;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         display: flex;
         flex-direction: column;
-        row-gap: 4px;
         padding: 16px;
         border-radius: 8px;
+        margin-bottom: 20px;
       }
       .topic-card h1 {
         font-family: cabinetRegular;
@@ -206,12 +204,13 @@
       }
       .topic-card p {
         padding: 0;
-        margin: 0;
+        margin-bottom: 4px;
+        margin-top: 4px;
       }
       .time-schedule {
         font-family: cabinetRegular;
         width: auto;
-        font-size: 8px;
+        font-size: 10px;
         font-weight: 700;
         color: #696969;
         letter-spacing: 0.5px;
@@ -221,7 +220,7 @@
   </style>
 </head>
 <body>
-    <img src="Logo (10).svg" alt="">
+    <img src="images/Logo (10).svg" alt="">
     <div class="top-page-bar"></div>
       <!-- This is the beginning of info on the page -->
       <div class="description-bar">
@@ -289,7 +288,7 @@
       <!-- this is where curriculum begins -->
       <div class="curriculum-container">
         <div class="curriculum-header">
-          <h1>curriculum</h1>
+          <h1>Curriculum</h1>
         </div>
           <div class="topic-card-container">
           <div class="topic-card">
