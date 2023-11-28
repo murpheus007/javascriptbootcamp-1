@@ -1,12 +1,12 @@
 * {
     margin: 0;
-    margin-top: 20px;
     padding: 0;
     box-sizing: border-box;
 }
   body {
     background-color: #F3F0F0;
     margin-bottom: 80px;
+    margin-top: 20px;
     padding: 0 60px;
     }
     p {
@@ -231,6 +231,12 @@
   }
 
   @media (max-width: 920px) {
+       body {
+        background-color: #F3F0F0;
+        margin-bottom: 80px;
+        margin-top: 20px;
+        padding: 0 16px;
+        }
     .column {
         width: 100%;
         height: auto;
